@@ -10,6 +10,6 @@
 #split each character then map the character against the esp_alph can sort not just by index 0 but on to the -nth index of string.
 def alphabetize(arr) 
   esp_alph = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
-  arr.sort_by { |phrase| phrase.split("").map{ |char| esp_alph.index(char) } }
+  arr.sort_by { |phrase| phrase.split("").map{ |letter| esp_alph.index(letter) } }
 end
 
